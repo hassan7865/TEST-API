@@ -7,7 +7,7 @@ app.use(cors({
     origin:"https://testagain-phi.vercel.app",
     credentials:true
 }))
-app.get("/data",(req,res)=>{
+app.post("/data",(req,res)=>{
     res.cookie("accessToken",true,{
         httpOnly:true,
         secure:true,
