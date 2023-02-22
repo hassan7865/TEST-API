@@ -12,7 +12,7 @@ app.get("/data",(req,res)=>{
         sameSite:"none",
         path:"/"
     })
-    res.send(req.header.cookie)
+    res.send(req.headers.cookie)
 })
 app.listen(8888,()=>{
     console.log("Server Started!!")
