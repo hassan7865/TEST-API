@@ -9,7 +9,8 @@ app.get("/data",(req,res)=>{
     res.cookie("accessToken",true,{
         httpOnly:true,
         secure:true,
-        sameSite:"none"
+        sameSite:"none",
+        path:"/"
     })
     res.send(req.cookies)
 })
