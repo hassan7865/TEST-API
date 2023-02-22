@@ -9,6 +9,7 @@ app.get("/data",(req,res)=>{
     res.cookie("accessToken",true,{
         httpOnly:true,
         secure:true,
+        sameSite:"none"
     })
     res.send("Hassan")
 })
