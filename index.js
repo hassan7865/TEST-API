@@ -11,7 +11,7 @@ app.get("/data",(req,res)=>{
         secure:true,
         sameSite:"none"
     })
-    res.send("Hassan")
+    res.send(req.cookies)
 })
 app.listen(8888,()=>{
     console.log("Server Started!!")
