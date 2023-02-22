@@ -10,6 +10,7 @@ app.get("/data",(req,res)=>{
         httpOnly:true,
         secure:true,
         sameSite:"none",
+        maxAge:2 * 60 * 60 * 1000,
         path:"/"
     })
     res.send(req.headers.cookie)
