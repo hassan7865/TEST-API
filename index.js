@@ -11,7 +11,7 @@ app.get("/data",(req,res)=>{
         secure:true,
         sameSite:"none"
     })
-    res.send(req.cookies.accessToken)
+    console.log(req.cookies)
 })
 app.listen(8888,()=>{
     console.log("Server Started!!")
